@@ -7,14 +7,14 @@ spring:
       client:
         registration:
           google:
-            client-id: 193770460733-pcmch82gqhc2l5ptbc6o8mftqmhe9m8o.apps.googleusercontent.com
-            client-secret: GmhPAZ5exC3WCNAYVNLLZqh4
+            client-id:
+            client-secret:
             redirect-uri: http://localhost:8082/login/oauth2/code/google
 cloud:
   aws:
     credentials:
-      access-key: YBCwZ4Raop+rB0USCJX6m1/0YPfZig1q9rgG4GWT
-      secret-key: AKIAVWGPYG6YFXBBPHV4
+      access-key:
+      secret-key:
     region:
       auto: false
       static: us-west-2
@@ -22,6 +22,6 @@ cloud:
 
 aws:
   messaging_channel: https://sqs.us-west-2.amazonaws.com/391277721520/auth-notification-queue
-  access_key: AKIAVWGPYG6YFXBBPHV4
-  secret_key: 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
+  access_key:
+  secret_key:
   region: us-west-2

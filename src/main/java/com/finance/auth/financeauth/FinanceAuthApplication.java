@@ -3,10 +3,10 @@ package com.finance.auth.financeauth;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.context.properties.ConfigurationPropertiesScan;
-import org.springframework.cloud.aws.autoconfigure.context.ContextStackAutoConfiguration;
+import org.springframework.data.mongodb.repository.config.EnableMongoRepositories;
 
-@SpringBootApplication(exclude = ContextStackAutoConfiguration.class)
-@ConfigurationPropertiesScan(basePackages = "com.finance.auth.financeauth.props")
+@SpringBootApplication
+@EnableMongoRepositories
 public class FinanceAuthApplication {
 
     public static void main(String[] args) {

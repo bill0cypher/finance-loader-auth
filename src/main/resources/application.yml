@@ -10,18 +10,8 @@ spring:
             client-id:
             client-secret:
             redirect-uri: http://localhost:8082/login/oauth2/code/google
-cloud:
-  aws:
-    credentials:
-      access-key:
-      secret-key:
-    region:
-      auto: false
-      static: us-west-2
-
-
-aws:
-  messaging_channel: https://sqs.us-west-2.amazonaws.com/391277721520/auth-notification-queue
-  access_key:
-  secret_key:
-  region: us-west-2
+  data:
+    mongodb:
+      uri:
+      repositories:
+        type: imperative
